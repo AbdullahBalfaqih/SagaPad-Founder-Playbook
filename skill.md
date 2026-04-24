@@ -1,3 +1,13 @@
+---
+Name: sagapad-founder-playbook
+Description: Use when a Solana founder needs a personalized 4-week X (Twitter) branding and growth strategy based on ecosystem patterns.
+License: MIT
+Compatibility: Requires Next.js 14+ and OpenRouter API Access.
+Metadata:
+  Category: Colosseum Hackathon
+Allowed-tools: Bash Read
+---
+
 # SagaPad Founder Playbook
 
 ## Description
