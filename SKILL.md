@@ -1,73 +1,68 @@
 ---
 Name: sagapad-founder-playbook
-Description: A deterministic Identity Compiler for Solana founders. It maps user inputs to high-leverage ecosystem archetypes (Anatoly, Mert, Armani) to generate a machine-readable 4-week brand strategy.
+Description: A high-fidelity Identity Engineering System for Solana founders. It uses a weighted scoring engine and engagement probability models to build and protect a deterministic ecosystem persona.
 License: MIT
-Compatibility: Requires Next.js 14+, OpenRouter API Access, and React 18+.
+Compatibility: Requires Next.js 14+, OpenRouter API Access (LLM as a Reasoning Engine).
 Metadata:
   Category: Colosseum Hackathon
-  Logic-Type: Deterministic Persona Mapping
+  Logic-Type: Weighted Deterministic Scoring
+  Feature: Identity Drift Prevention
 Allowed-tools: Bash Read
 ---
 
-# 🧠 SagaPad Founder Identity Compiler
+# 🧠 SagaPad Founder Identity Compiler (v2.0 - Engineering Grade)
 
-An elite Web3 Personal Branding Skill designed to transform raw founder data into a high-signal Solana ecosystem identity. Unlike generic content writers, this engine operates as a **Market Agent** in the attention economy.
+This is a **Deterministic Skill Engine** designed to compile founder data into a high-leverage Solana identity. It replaces AI guessing with a rigorous scoring model and attention-graph simulation.
 
-## 📋 Input Schema (YAML)
-```yaml
-Founder:
-  name: string
-  product: string
-  background: string
-  interests: list[string]
-  tone: "Builder" | "Researcher" | "Meme-driven" | "Contrarian"
-```
+## 🛠️ Deterministic Scoring Engine
+The engine evaluates the input against four primary vectors (0-1 scale):
+1. **Technical Depth (TD)**: Measured by background in protocol/dev research.
+2. **Narrative Strength (NS)**: Measured by clarity of vision and storytelling.
+3. **Ecosystem Alignment (EA)**: Measured by product fit within current Solana priorities.
+4. **Contrarian Signal (CS)**: Measured by the uniqueness/boldness of the POV.
 
-## ⚙️ Engine Logic (Step-by-Step)
+### ⚖️ Archetype Formulas:
+- **IF (TD + Shipping_Focus > 1.2)** → **The Architect** (Anatoly Archetype)
+- **IF (CS > 0.8 OR (NS + CS > 1.4))** → **The Agitator** (Mert Archetype)
+- **IF (NS + EA > 1.5)** → **The Storyteller** (Armani Archetype)
+- **ELSE** → **The Sage** (Deep Research Archetype)
 
-1. **Archetype Classification**:
-   - Analyzes `tone` and `background` to categorize the founder into one of four Solana personas:
-     - **The Architect**: Heavy technical focus, shipping-oriented (Anatoly style).
-     - **The Agitator**: Aggressive POV, narrative-driven, zero-filter (Mert style).
-     - **The Storyteller**: Ecosystem-wide vision, community-first (Armani style).
-     - **The Sage**: Deep-tech researcher, long-form takes, alpha-heavy.
+## 📊 Simulation Layer (Engagement Probability Model)
+The engine predicts interaction likelihood based on ecosystem attention weights:
+- **Core Dev Engagement Weight**: 0.5
+- **Solana OG (Toly/Mert) Weight**: 0.3
+- **General Crypto Twitter (CT) Weight**: 0.2
 
-2. **Persona Mapping**:
-   - Maps the founder's `interests` against current Solana ecosystem trends (LSTs, AI Agents, ZK, etc.).
-   - Identifies the **"Positioning Gap"** — the specific topic the founder can "own" without direct competition.
+### 📈 Metrics Output:
+- **Engagement Probability Score**: Combined weighted likelihood of interaction.
+- **Virality Likelihood**: Predictive score for "Retweet-ability" on the Solana graph.
 
-3. **Simulation Layer**:
-   - Simulates the X (Twitter) graph interaction.
-   - Evaluates: "If this founder posts X, will $SOL-native accounts (Anatoly, Toly, etc.) engage?"
+## 🛡️ Identity Drift Prevention (Killer Feature)
+A monitoring layer that evaluates content consistency.
+- **Function**: Compares proposed content against the compiled Archetype.
+- **Action**: Generates a "Drift Alert" if content exceeds a 0.3 variance from the core Identity System.
 
-4. **Identity Synthesis**:
-   - Generates a deterministic branding system.
-
-## 📦 Output Spec (JSON Structure)
+## 📦 Output Spec (Structured Schema)
 ```json
 {
+  "scores": { "TD": 0.0, "NS": 0.0, "EA": 0.0, "CS": 0.0 },
   "identity": {
-    "unique_pov": "The single perspective to own.",
-    "archetype_match": "The mapped Solana founder archetype.",
-    "positioning_gap": "What they are NOT saying yet."
+    "archetype": "string",
+    "unique_pov": "string",
+    "positioning_gap": "string"
   },
-  "content_system": {
-    "pillars": ["3-4 recurring topics"],
-    "style_rules": ["Tone and structure constraints"],
-    "distribution_strategy": "How to insert into Solana conversations."
+  "simulation": {
+    "engagement_score": 0.0,
+    "virality_likelihood": 0.0,
+    "target_og_engagement": "string"
   },
-  "execution": {
-    "weekly_rhythm": "Posting frequency and format mix.",
-    "simulated_posts": ["Example posts written in the cloned voice."]
+  "prevention": {
+    "drift_boundary": "string",
+    "consistency_rules": []
   }
 }
 ```
 
-## 🚀 Founder Clone Mode
-When active, the engine adopts the specific advisory voice of:
-- **Anatoly Yakovenko**: Technical, witty, low-time-preference.
-- **Mert Mumtaz**: Direct, high-energy, narrative-aggressive.
-- **Armani Ferrante**: Philosophical, ecosystem-storytelling.
-
-## 🧪 Prompt Logic
-Powered by GPT-4o-mini / Gemini 1.5 Flash. The prompt uses **Few-Shot Prompting** with real data from top Solana founders to ensure zero-shot generic outputs are minimized.
+## 🚀 System Boundary
+- **What it IS**: A deterministic identity compiler and strategic evaluator.
+- **What it IS NOT**: A generic chatbot, a basic content rewriter, or a general-purpose assistant. It is a specialized execution system for the Solana Attention Economy.
