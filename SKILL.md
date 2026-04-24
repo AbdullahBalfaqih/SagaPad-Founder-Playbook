@@ -1,13 +1,13 @@
 ---
-Name: sagapad-founder-playbook
-Description: A production-grade Identity Engineering System for Solana founders. It implements a calibrated scoring engine, adaptive refinement loops, and attention-graph feedback models for deterministic persona growth.
-License: MIT
-Compatibility: Requires Next.js 14+ and OpenRouter API Access.
-Metadata:
-  Category: Colosseum Hackathon
-  Logic-Type: Calibrated Deterministic Engineering
-  Version: 3.0 Final
-Allowed-tools: Bash Read
+name: sagapad-founder-playbook
+description: A production-grade Identity Engineering System for Solana founders. It implements a calibrated scoring engine, adaptive refinement loops, and attention-graph feedback models for deterministic persona growth.
+license: MIT
+compatibility: Requires Next.js 14+ and OpenRouter API Access.
+metadata:
+  category: Colosseum Hackathon
+  logic-type: Calibrated Deterministic Engineering
+  version: 3.0 Final
+allowed-tools: Bash Read
 ---
 
 # SagaPad Founder Identity Compiler (Final Production Grade)
