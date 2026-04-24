@@ -1,32 +1,73 @@
 ---
 Name: sagapad-founder-playbook
-Description: Use when a Solana founder needs a personalized 4-week X (Twitter) branding and growth strategy based on ecosystem patterns.
+Description: A deterministic Identity Compiler for Solana founders. It maps user inputs to high-leverage ecosystem archetypes (Anatoly, Mert, Armani) to generate a machine-readable 4-week brand strategy.
 License: MIT
-Compatibility: Requires Next.js 14+ and OpenRouter API Access.
+Compatibility: Requires Next.js 14+, OpenRouter API Access, and React 18+.
 Metadata:
   Category: Colosseum Hackathon
+  Logic-Type: Deterministic Persona Mapping
 Allowed-tools: Bash Read
 ---
 
-# SagaPad Founder Playbook
+# 🧠 SagaPad Founder Identity Compiler
 
-## Description
-An elite Web3 Personal Branding Coach skill tailored specifically for the Solana ecosystem. It studies the X (Twitter) profiles and posting patterns of the biggest Solana founders (e.g., Anatoly, Mert, Armani) to extract what makes them unique, and translates those patterns into a highly personalized 4-week growth strategy for early-stage founders.
+An elite Web3 Personal Branding Skill designed to transform raw founder data into a high-signal Solana ecosystem identity. Unlike generic content writers, this engine operates as a **Market Agent** in the attention economy.
 
-## Inputs
-1. **Founder Name:** (e.g., John Doe)
-2. **What they're building:** (e.g., On-chain ticketing platform)
-3. **Their Background:** (e.g., Full-stack dev & protocol researcher)
-4. **What they care about most:** (e.g., DeFi, UX, AI agents)
-5. **Natural Communication Style:** (e.g., Analytical, Contrarian, Storyteller)
+## 📋 Input Schema (YAML)
+```yaml
+Founder:
+  name: string
+  product: string
+  background: string
+  interests: list[string]
+  tone: "Builder" | "Researcher" | "Meme-driven" | "Contrarian"
+```
 
-## Outputs
-- **Unique POV:** The single, powerful perspective this founder should own on X.
-- **Content Pillars:** 3-4 recurring topics for infinite content generation.
-- **Writing Style Guide:** Rules on tone, formatting, and jargon usage.
-- **Weekly Posting Rhythm:** A schedule mixing threads, short takes, and replies.
-- **Engagement Playbook:** Who to follow and how to insert into trending Solana conversations.
-- **Example 10 Posts:** Ready-to-publish drafts written exactly in the founder's voice.
+## ⚙️ Engine Logic (Step-by-Step)
 
-## Prompt / Engine Logic
-The engine is powered by GPT-4o-mini / Gemini 1.5 Flash via OpenRouter. It actively maps the user inputs against a dataset of successful Solana ecosystem narratives to ensure the resulting playbook is not generic, but highly tailored to the Colosseum Hackathon and Seeker ecosystem momentum.
+1. **Archetype Classification**:
+   - Analyzes `tone` and `background` to categorize the founder into one of four Solana personas:
+     - **The Architect**: Heavy technical focus, shipping-oriented (Anatoly style).
+     - **The Agitator**: Aggressive POV, narrative-driven, zero-filter (Mert style).
+     - **The Storyteller**: Ecosystem-wide vision, community-first (Armani style).
+     - **The Sage**: Deep-tech researcher, long-form takes, alpha-heavy.
+
+2. **Persona Mapping**:
+   - Maps the founder's `interests` against current Solana ecosystem trends (LSTs, AI Agents, ZK, etc.).
+   - Identifies the **"Positioning Gap"** — the specific topic the founder can "own" without direct competition.
+
+3. **Simulation Layer**:
+   - Simulates the X (Twitter) graph interaction.
+   - Evaluates: "If this founder posts X, will $SOL-native accounts (Anatoly, Toly, etc.) engage?"
+
+4. **Identity Synthesis**:
+   - Generates a deterministic branding system.
+
+## 📦 Output Spec (JSON Structure)
+```json
+{
+  "identity": {
+    "unique_pov": "The single perspective to own.",
+    "archetype_match": "The mapped Solana founder archetype.",
+    "positioning_gap": "What they are NOT saying yet."
+  },
+  "content_system": {
+    "pillars": ["3-4 recurring topics"],
+    "style_rules": ["Tone and structure constraints"],
+    "distribution_strategy": "How to insert into Solana conversations."
+  },
+  "execution": {
+    "weekly_rhythm": "Posting frequency and format mix.",
+    "simulated_posts": ["Example posts written in the cloned voice."]
+  }
+}
+```
+
+## 🚀 Founder Clone Mode
+When active, the engine adopts the specific advisory voice of:
+- **Anatoly Yakovenko**: Technical, witty, low-time-preference.
+- **Mert Mumtaz**: Direct, high-energy, narrative-aggressive.
+- **Armani Ferrante**: Philosophical, ecosystem-storytelling.
+
+## 🧪 Prompt Logic
+Powered by GPT-4o-mini / Gemini 1.5 Flash. The prompt uses **Few-Shot Prompting** with real data from top Solana founders to ensure zero-shot generic outputs are minimized.
