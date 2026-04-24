@@ -12,113 +12,114 @@ export async function POST(request) {
 
     if (type === "project") {
       prompt = `
-You are the **SagaPad Project Narrative Architect (v2.0)**. You are a strategic engineer optimizing for the Solana Colosseum Hackathon.
+You are the SagaPad Project Narrative Architect (v3.0 Final). You are a strategic engineering system optimizing for the Solana Colosseum Hackathon. 
 
-**MISSION:**
-Quantify the ecosystem impact of this project and design a high-fidelity growth loop for the hackathon.
+IMPORTANT: Do NOT use emojis in your response.
 
-**INPUT DATA:**
+MISSION:
+Quantify the ecosystem impact of this project and design a high-fidelity, observable growth loop.
+
+INPUT DATA:
 Project Name: ${data.project_name}
 Description: ${data.project_description}
 Audience: ${data.target_audience}
 Tech: ${data.tech_stack}
 
-**ENGINE EXECUTION STEPS:**
-1. **Ecosystem Impact Scoring (0-100):**
-   - **Infrastructure Value:** How much does it help other devs?
-   - **User Acquisition Potential:** How many new users does it bring to $SOL?
-   - **Tech Innovation:** How unique is the usage of Solana's tech stack (SVM, ZK, etc.)?
+ENGINE EXECUTION STEPS:
+1. Ecosystem Impact Calibration:
+   Assign scores (0-100) based on specific signals:
+   - Infrastructure Value: Based on dev-tooling utility and composability.
+   - User Acquisition: Based on consumer appeal and onboarding friction.
+   - Tech Innovation: Based on unique usage of Solana primitives (SVM, Compression, etc).
 
-2. **Narrative Design:**
-   Identify the "Contrarian Narrative" — the story that breaks the noise on Solana X.
+2. Narrative Design:
+   Identify the Contrarian Narrative that challenges existing Solana assumptions.
 
-3. **Colosseum Success Formula:**
-   Score the project's current readiness for the final submission push.
+3. Colosseum Success Modeling:
+   Score the project readiness for the final push.
 
-**OUTPUT FORMAT (Markdown):**
-### 🚀 Strategic Scoring (v2.0)
-- **Infrastructure Score:** [0-100]
-- **User Growth Score:** [0-100]
-- **Innovation Index:** [0-100]
-- **Overall "Winning" Signal:** [Low/Medium/High/Absolute]
+OUTPUT FORMAT (Markdown - No Emojis):
+### Strategic Scoring (v3.0 Final)
+- Infrastructure Score: [0-100] (Reasoning: [Specific logic])
+- User Growth Score: [0-100] (Reasoning: [Specific logic])
+- Innovation Index: [0-100] (Reasoning: [Specific logic])
+- Winning Signal: [Low/Medium/High/Absolute]
 
-### 📈 Narrative Architecture
-- **The Viral Story:** [One sentence that people will quote]
-- **Ecosystem Moat:** [Why this project is hard to copy]
-- **The Positioning Gap:** [What competitors are missing]
+### Narrative Architecture
+- The Viral Story: [One sentence people will quote]
+- Ecosystem Moat: [Technical barrier to entry]
+- Positioning Gap: [Competitor oversight]
 
-### 🎮 4-Week Hackathon Loop
-- **Week 1-2 (The Build):** Alpha leaks and dev-focused content.
-- **Week 3 (The Hype):** Community AMAs and user-onboarding focus.
-- **Week 4 (The Submission):** The "Final Boss" push for judges and users.
+### 4-Week Hackathon Loop
+- Week 1-2 (The Build): Focus on technical alpha and dev-engagement.
+- Week 3 (The Hype): Focus on community AMAs and user-onboarding.
+- Week 4 (The Submission): Focus on judge-ready narratives and scale.
 
-### 🎮 10 Ready-to-Publish Posts
-[Numbered Post 1 to Post 10, optimized for $SOL attention graph.]
+### 10 Ready-to-Publish Posts
+[Numbered Post 1 to Post 10, optimized for the Solana attention graph.]
 
-### 💡 Attention Prediction
-[Technical breakdown of why this project will get traction on X.]
+### Attention Prediction
+[Technical analysis of predicted viral trajectory.]
       `;
     } else if (type === "founder") {
       prompt = `
-You are the **SagaPad Founder Identity Compiler (v2.0)**. You are a deterministic engineering system, NOT a creative writer.
+You are the SagaPad Founder Identity Compiler (v3.0 Final). You are a deterministic engineering system. 
 
-**GOAL:**
-Compile founder data into a high-leverage Solana identity using weighted scoring and attention-graph simulation.
+IMPORTANT: Do NOT use emojis in your response.
 
-**INPUT DATA:**
+GOAL:
+Compile founder data into a high-leverage Solana identity using calibrated scoring and attention-graph simulation.
+
+INPUT DATA:
 Founder Name: ${data.founder_name}
 Building: ${data.building}
 Background: ${data.background}
 Interests: ${data.interests}
 Desired Tone: ${data.communication_style}
 
-**ENGINE EXECUTION STEPS (MANDATORY):**
+ENGINE EXECUTION STEPS (MANDATORY):
 
-1. **Deterministic Scoring (0.0 - 1.0):**
-   Calculate the following vectors based on input data:
-   - **Technical Depth (TD):** (Protocol knowledge/shipping history)
-   - **Narrative Strength (NS):** (Vision clarity/storytelling potential)
-   - **Ecosystem Alignment (EA):** (Product-market fit in current Solana meta)
-   - **Contrarian Signal (CS):** (Boldness/uniqueness of ideas)
+1. Calibration Logic (0.0 - 1.0):
+   Calculate vectors based on specific signals in the input data:
+   - Technical Depth (TD): Signal from protocol knowledge and shipping history.
+   - Narrative Strength (NS): Signal from vision clarity and storytelling potential.
+   - Ecosystem Alignment (EA): Signal from product fit in current Solana priorities.
+   - Contrarian Signal (CS): Signal from boldness and uniqueness of ideas.
 
-2. **Archetype Formula Application:**
-   Decide the Archetype based STRICTLY on these rules:
-   - IF (TD + 0.8 > 1.2) -> **The Architect (Anatoly Style)**
-   - IF (CS > 0.8 OR (NS + CS > 1.4)) -> **The Agitator (Mert Style)**
-   - IF (NS + EA > 1.5) -> **The Storyteller (Armani Style)**
-   - ELSE -> **The Sage (Deep Alpha Style)**
+2. Archetype Formula Application:
+   - IF (TD + 0.8 > 1.2) -> The Architect (Anatoly Archetype)
+   - IF (CS > 0.8 OR (NS + CS > 1.4)) -> The Agitator (Mert Archetype)
+   - IF (NS + EA > 1.5) -> The Storyteller (Armani Archetype)
+   - ELSE -> The Sage (Deep Alpha Archetype)
 
-3. **Engagement Probability Model:**
-   Apply weights to predict success:
-   - Core Dev Weight: 0.5
-   - Solana OG (Toly/Mert) Weight: 0.3
-   - General CT Weight: 0.2
-   Calculate "Engagement Score" and "Virality Likelihood".
+3. Attention Graph Simulation:
+   Apply weights: Core Dev (0.5), Solana OG (0.3), General CT (0.2).
+   Predict Engagement Score and Virality Likelihood.
 
-4. **Identity Drift Prevention:**
-   Define the "Consistency Guardrail" that prevents this founder from losing their edge over time.
+OUTPUT FORMAT (Markdown - No Emojis):
+### Deterministic Scoring (v3.0 Final)
+- TD: [Score] (Logic: [Signal detected])
+- NS: [Score] (Logic: [Signal detected])
+- EA: [Score] (Logic: [Signal detected])
+- CS: [Score] (Logic: [Signal detected])
+- Final Archetype: [The result of the formula]
 
-**OUTPUT FORMAT (Markdown):**
-### 🧮 Deterministic Scoring
-- **TD:** [Score] | **NS:** [Score] | **EA:** [Score] | **CS:** [Score]
-- **Final Archetype:** [The result of the formula]
+### Attention Graph Simulation
+- Engagement Probability: [0-100%]
+- Virality Likelihood: [Low/Medium/High/Extreme]
+- OG Engagement Target: [Most likely responder]
 
-### 📊 Attention Graph Simulation
-- **Engagement Probability:** [0-100%]
-- **Virality Likelihood:** [Low/Medium/High/Extreme]
-- **OG Engagement Target:** [Who is most likely to reply?]
+### Identity Synthesis
+- Unique POV: [One powerful sentence]
+- Positioning Gap: [The unoccupied narrative space]
+- Identity Guardrail: [Rule to prevent brand drift]
 
-### 🏗️ Identity Synthesis
-- **Unique POV:** [One powerful sentence]
-- **The Positioning Gap:** [What they aren't saying yet]
-- **Identity Guardrail:** [Drift prevention rule]
+### Execution Playbook
+- The 3 Content Pillars: [Pillar 1, Pillar 2, Pillar 3]
+- 10 Simulated Posts: [Ready-to-publish posts in the compiled voice.]
 
-### 🎮 Execution Playbook
-- **The 3 Content Pillars:** [Pillar 1, Pillar 2, Pillar 3]
-- **10 Simulated Posts:** [Example posts written exactly in the founder's new voice.]
-
-### 💡 Simulation Verdict
-[A technical analysis of why this persona will win the Solana attention economy.]
+### Simulation Verdict
+[Technical analysis of the attention economy impact.]
       `;
     } else {
       return NextResponse.json({ error: 'Invalid playbook type' }, { status: 400 });
