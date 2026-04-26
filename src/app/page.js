@@ -10,6 +10,7 @@ import AnalyticsView from "@/components/AnalyticsView";
 import MySkillsView from "@/components/MySkillsView";
 import InstalledSkillsView from "@/components/InstalledSkillsView";
 import SettingsView from "@/components/SettingsView";
+import XActionsView from "@/components/XActionsView";
 import LineWaves from "@/components/LineWaves";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -67,6 +68,12 @@ export default function Home() {
         return (
           <motion.div key="settings" variants={pageVariants} initial="initial" animate="animate" exit="exit" style={{ width: "100%" }}>
             <SettingsView />
+          </motion.div>
+        );
+      case "xactions":
+        return (
+          <motion.div key="xactions" variants={pageVariants} initial="initial" animate="animate" exit="exit" style={{ width: "100%" }}>
+            <XActionsView />
           </motion.div>
         );
       case "dashboard":

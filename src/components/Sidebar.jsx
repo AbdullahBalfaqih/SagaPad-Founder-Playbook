@@ -7,6 +7,7 @@ const NAV_ITEMS = [
   { id: "project", icon: Rocket, label: "Project Playbook" },
   { id: "founder", icon: User, label: "Founder Playbook" },
   { id: "studio", icon: PenTool, label: "Content Studio" },
+  { id: "xactions", icon: Zap, label: "X Intelligence" },
   { id: "analytics", icon: BarChart3, label: "Analytics" },
   { id: "myskills", icon: Zap, label: "My Skills" },
   { id: "installed", icon: Package, label: "Installed Skills" },

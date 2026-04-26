@@ -59,5 +59,43 @@ The output is structured for transparency, including:
 - 10 Simulated Posts with predicted engagement scores.
 - Simulation Verdict based on Attention Graph feedback.
 
-## 7. System Boundary and Role
+## 8. Content Factory (Deterministic Content Generation)
+The Content Factory generates specific output aligned with the identified Archetype to maximize the Engagement Probability Score.
+
+### Content Pillars (Archetype-Dependent):
+- **The Architect**: Technical deep-dives, SVM/ZK architectural critiques, "Proof of Work" updates.
+- **The Agitator**: Contrarian takes on ecosystem inefficiencies, "Hard Truths" about crypto, challenges to status quo.
+- **The Storyteller**: Visionary future-casting, ecosystem growth narratives, partnership/culture builders.
+- **The Sage**: Deep alpha analysis, macro-Solana trends, institutional-grade insights.
+
+### Content Generation Logic:
+For every piece of content, the system must:
+1.  **Anchor to Vector**: Identify which score (TD, NS, EA, CS) the post is intended to boost.
+2.  **Lexical Calibration**: Inject archetype-specific keywords (e.g., "deterministic," "shred," "SVM" for Architects).
+3.  **Engagement Simulation**: Run the Attention Graph model to predict reaction before finalization.
+
+## 9. Strategic 4-Week Execution Roadmap
+The goal is to transition from raw data to an Established Ecosystem Pillar.
+
+### Week 1: Identity Hardening (Signal vs. Noise)
+- **Objective**: Establish the base Archetype signal.
+- **Actions**: Cleanse historical drift, establish the "Vector Anchor," and launch 3 "Foundational Signal" posts.
+- **KPI**: Initial Engagement Probability > 40%.
+
+### Week 2: Ecosystem Interfacing (Integration)
+- **Objective**: Align identity with current Solana priorities (SVM, AI, LSTs).
+- **Actions**: Narrative-map current ecosystem leaders, participate in "High-Weight" attention graphs, and release 1 "Long-Form Deep Dive."
+- **KPI**: EA (Ecosystem Alignment) score increase of > 0.2.
+
+### Week 3: Authority Scaling (Narrative Capture)
+- **Objective**: Capture the narrative lead in a specific sub-niche.
+- **Actions**: Deploy 5 "Narrative Disruptor" posts, engage in 3 simulated "Counter-Narrative" defenses.
+- **KPI**: CS (Contrarian Signal) stability check.
+
+### Week 4: Attention Consolidation (Virality)
+- **Objective**: Consolidate gains into a recurring attention loop.
+- **Actions**: Launch the "Identity Beacon" post, run full Attention Graph feedback loop, and finalize the 8-week content calendar.
+- **KPI**: Final Synthesis Engagement Score > 75%.
+
+## 10. System Boundary and Role
 The system is a Specialized Execution System for the Solana Attention Economy. It functions as a Strategist, Evaluator, and Identity Compiler. It is not a general-purpose writing assistant or a basic chatbot.
